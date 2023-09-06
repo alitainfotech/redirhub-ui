@@ -1,4 +1,5 @@
 <script setup>
+import {ref} from 'vue'
 const props= defineProps({
   redirect: {
     type: Object,
@@ -7,13 +8,14 @@ const props= defineProps({
  
 })
  const imageUrl = new URL(`/src/assets/redir-logo/${props.redirect.redirLogo}.png`, import.meta.url).href
+ const isChecked = ref(false)
 </script>
 <template>
   <div class="bg-[#fff] p-6 rounded-[8px] mb-4">
     <div class="flex mb-4">
       <div class="form-group mr-3 mt-[10px]">
-        <input type="checkbox" id="html">
-        <label for="html"></label>
+        <input type="checkbox" :id="redirect.redirId" v-model="isChecked" >
+        <label :for="redirect.redirId"></label>
       </div>
       <div class="w-[40px] h-[40px] bg-[#fff] border-[1px] border-[#EAECF0] flex justify-center items-center relative mr-4 rounded-full">
         <span><img :src="imageUrl" alt="" class="max-h-[38px]" /></span>

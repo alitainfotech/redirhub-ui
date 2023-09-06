@@ -1,10 +1,14 @@
 <script setup>
+import {useRoute} from 'vue-router'
+import {computed} from 'vue'
+const route=useRoute();
+const path = computed(() =>route.path.slice(1, route.path.length))
 </script>
 
 <template>
   <nav class="navigation">
     <ul>
-      <li class="group">
+      <li class="group" :class="{active: path===''}">
         <RouterLink to="/">
           <a
             href="#"
@@ -20,7 +24,7 @@
           </a>
         </RouterLink>
       </li>
-      <li class="group">
+      <li class="group" :class="{active: path==='redirects'}">
         <RouterLink to="/redirects">
           <a
             href="#"
@@ -36,7 +40,7 @@
           </a>
         </RouterLink>
       </li>
-      <li class="group">
+      <li class="group" :class="{active: path==='urlshortner'}">
         <RouterLink to="/urlshortner">
           <a
             href="#"
@@ -52,7 +56,7 @@
           </a></RouterLink
         >
       </li>
-      <li class="group">
+      <li class="group" :class="{active: path==='monitor'}">
         <RouterLink to="/monitor">
           <a
             href="#"
@@ -66,7 +70,7 @@
           </a>
         </RouterLink>
       </li>
-      <li class="group">
+      <li class="group" :class="{active: path==='hostnames'}">
         <RouterLink to="/hostnames">
           <a
             href="#"
