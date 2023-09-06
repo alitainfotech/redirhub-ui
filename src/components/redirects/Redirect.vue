@@ -10,7 +10,7 @@ const props= defineProps({
 </script>
 <template>
   <div class="bg-[#fff] p-6 rounded-[8px] mb-4">
-    <div class="flex mb-4">
+    <div class="flex mb-4 lg:flex-none flex-wrap ">
       <div class="form-group mr-3 mt-[10px]">
         <input type="checkbox" id="html">
         <label for="html"></label>
@@ -19,10 +19,10 @@ const props= defineProps({
         <span><img :src="imageUrl" alt="" class="max-h-[38px]" /></span>
         <i class="w-[10px] h-[10px] bg-[#12B76A] absolute bottom-0 right-0 rounded-full"></i>
       </div>
-      <h3 class="text-[18px] text-[#667085] leading-[40px] w-[30%] overflow-hidden text-ellipsis whitespace-nowrap">{{redirect.redirName}}</h3>
+      <h3 class="text-[18px] text-[#667085] leading-[40px] w-[60%] lg:w-[30%] overflow-hidden text-ellipsis whitespace-nowrap">{{redirect.redirName}}</h3>
       
-      <div class=" ml-auto flex items-center">
-        <div class="mr-6 textHover flex items-center">
+      <div class="ml-auto flex items-center max-[1349px]:flex-wrap max-[1349px]:justify-end  lg:mt-0 mt-2">
+        <div class="mr-6 textHover flex items-center max-[1349px]:mr-0 max-[1349px]:mb-2 ">
           <div class="ml-6 group flex items-center">
             <i class="mr-2"><img src="@/assets/images/svg/activity.svg" alt="" /></i>
             <span class="text-[14px] text-[#667085] font-normal group-hover:text-[#1D2939]">{{redirect.redirClicks}} clicks</span>
@@ -57,9 +57,9 @@ const props= defineProps({
     </div>
     <div class="pl-[88px]">
       <div class="flex items-center mb-4">
-        <p class="bg-[#fff] border-[1px] border-[#D0D5DD] rounded-[8px] pl-3 leading-[30px] text-[16px] text-[#475467] font-semibold w-[calc(50%-28px)]">{{redirect.redirSource}}</p>
+        <p class="bg-[#fff] border-[1px] border-[#D0D5DD] rounded-[8px] pl-3 leading-[30px] text-[16px] text-[#475467] font-semibold w-[calc(50%-28px)] overflow-hidden">{{redirect.redirSource}}</p>
         <i class="pl-4 pr-4"><img src="@/assets/images/svg/arrow-right-circle.svg" alt="" /></i>
-        <p class="bg-[#fff] border-[1px] border-[#12B76A] rounded-[8px] pl-3 leading-[30px] text-[16px] text-[#12B76A] font-semibold w-[calc(50%-28px)]">{{redirect.redirDestination}}</p>
+        <p class="bg-[#fff] border-[1px] border-[#12B76A] rounded-[8px] pl-3 leading-[30px] text-[16px] text-[#12B76A] font-semibold w-[calc(50%-28px)] overflow-hidden">{{redirect.redirDestination}}</p>
       </div>
       <div class="flex flex-wrap" v-if="redirect.redirTags.length">
         <i><img src="@/assets/images/svg/tag.svg" alt="" /></i>
