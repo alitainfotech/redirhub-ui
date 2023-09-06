@@ -1,4 +1,4 @@
-export const redirects =[
+export const redirectsData =[
     {
         redirId:'1',
         redirName:'RedirHub Name line',
