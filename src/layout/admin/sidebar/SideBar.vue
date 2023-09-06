@@ -5,7 +5,7 @@ import SidebarNavigation from '../sidebar/SidebarNavigation.vue'
 </script>
 
 <template>
-    <div class="sidebar w-[260px] border-r-[1px] border-[#EAECF0] bg-[#fff] absolute left-0 top-0 h-screen flex flex-col">
+    <div class="sidebar w-[72px] lg:w-[260px] border-r-[1px] border-[#EAECF0] bg-[#fff] absolute left-0 top-0 h-screen flex flex-col">
       <SidebarLogo/>
       <SidebarNavigation/>
       <SideBarFooter/>

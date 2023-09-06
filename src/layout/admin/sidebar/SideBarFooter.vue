@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="m-6 bg-[#F9FAFB] rounded-md p-4 mt-auto">
+  <div class="m-6 bg-[#F9FAFB] rounded-md p-4 mt-auto hidden lg:block">
     <h4 class="flex items-center m-0 mb-4 p-0">
       <i class="mr-3 bg-[#F79009] flex w-[32px] h-[32px] items-center justify-center rounded-[4px]">
       <img src="@/assets/images/svg/shuffleWhite.svg" alt="" /></i> <span class="text-[14px] text-[#344054] font-medium leading-[32px]">Redirects Basic</span>
