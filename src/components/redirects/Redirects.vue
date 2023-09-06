@@ -2,7 +2,7 @@
 import Redirect from './Redirect.vue'
 </script>
 <template>
-  <div class="greetings">redirect list
+  <div class="greetings">
     <Redirect/>
   </div>
 </template>
