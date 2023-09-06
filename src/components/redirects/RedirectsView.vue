@@ -3,7 +3,7 @@ import RedirectsTop from './RedirectsTop.vue'
 import Redirects from './Redirects.vue'
 </script>
 <template>
-  <div class="greetings">redirect view
+  <div class="greetings">
     <RedirectsTop/>
     <Redirects/>
   </div>

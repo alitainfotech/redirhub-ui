@@ -2,7 +2,5 @@
 </script>
 
 <template>
-  <main>
-    <div>side bar logo</div>
-  </main>
+  <div class="p-3 pl-4 pr-4"><a href="#"><img src="@/assets/images/svg/logo.svg" alt="" /></a></div>
 </template>
